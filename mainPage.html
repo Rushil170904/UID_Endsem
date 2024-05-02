@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="mainPage.css">
+        <script src = "mainPage.js"></script>
+    </head>
+    <body>
+        <div class = "navBar" id = "navBar">
+
+            <p>BMI Calculator</p>
+            <img src= "bmi-2.png">
+           
+            <a href = "signUp.html">Sign Up</a>
+            <a href = "logIn.html">Log In</a>
+
+        </div>
+        <div class = "myForm" id = "myFormID" style = "opacity : 1;"> 
+            <div class = "maleFemale" id = "maleFemale" style = "opacity: 1;">
+                <button id = "male" onclick = "blueChange()">Male</button>
+                <button id = "female" onclick = "pinkChange()">Female</button><br>
+            </div>
+
+            <div class = "details" style = "opacity: 1;">
+
+                    <label for="height">Height : </label>
+                    <label for="meter">m</label>
+                    <input type = "radio" id = "meter" name = "hUnit" onchange="myM()">
+
+                    <label for="cm">cm</label>
+                    <input type = "radio" id = "cm" name = "hUnit" onchange="myCm()" checked><br><br>
+
+                    <input type = "number" id = "height"><p id = "unit"> cm</p><br><br>
+
+                    <label for = "weight">Weight : </label><br><br>
+                    <input type = "number" id = "weight">kg<br><br>   
+
+                    <input type = "submit" onclick = "dataSubmit()">
+
+                    <div class = "bmiBox">
+
+                    <p class = "display" id = "bmiDisplay"></p>
+                    </div>
+            </div>     
+            <div class = design id = "design"><p id = "dtext"><b>C</b>heck Your <br><b style = "font-size:170px">BMI</b> Today.</p></div>
+        </div>
+       
+        <div class = "information" id = "information">
+            <img src = "bmi-1.png">
+            <p >BMI is an estimate of body fat and a good gauge of your
+                 risk for diseases that can occur with more body fat. 
+                 The higher your BMI, the higher your risk for certain 
+                 diseases such as heart disease, high blood pressure, 
+                 type 2 diabetes, gallstones, breathing problems, 
+                 and certain cancers.</p>
+
+            <p style = "top : 500px;margin-left: 55%;">
+                An OverView of how your BMI compares with Others
+            </p>
+
+            <p style = "top : 900px;margin-left: 55%;">
+                An OverView of how your BMI changed overTime
+            </p>
+
+            <p style = "margin-left :7%;top : 1200px;">
+                Overall Verdict : 
+            </p>
+        </div>
+        </div>
+    </body>
+</html>
