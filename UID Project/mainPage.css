@@ -1,0 +1,233 @@
+body{
+    background-image : url("mBackground.jpg");
+    background-size : 140% 140%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navBar{
+    background-color : rgb(40,55,100);
+    border-radius : 20px;
+    position :fixed;
+    top:10px;
+    width : 97%;
+    margin-left : 0.5%;
+    z-index: 1;
+    
+}
+.navBar img{
+    height: 45px;
+    width : 45px;
+    position: relative;
+    left : 195px;
+    top : 7px;
+    
+    animation : transitionIn 1s;
+
+}
+
+.navBar p{
+    position: absolute;
+    padding-left : 20px;
+    transform: translateY(-40%);
+    font-size: 25px;
+    color : white;
+    display: inline;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation : transitionI 1s;
+}
+.navBar a{
+    float : right;
+    padding : 20px;
+    text-decoration: none;
+    color : white; 
+    border-radius:20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.navBar a:hover{
+    background-color: rgb(225, 247, 255);
+    color : black;
+    
+}
+.myForm{
+    background-color:rgb(130,180,210);
+    border-radius : 20px;
+    top:100px;
+    left : 45px;
+    width : 93.8%;
+    height : 550px;
+
+    position: fixed;
+    z-index: -1;
+    opacity: 1;
+}
+
+.details{
+    position: absolute;
+    top : 120px;
+    left : 130px;
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    opacity: 1;
+   
+}
+.design{
+    height : 100%;
+    width : 60%;
+    background-color: rgb(2,25,54);
+    position : absolute;
+    right : 0px;
+    top : 0px;
+    border-radius: 20px;
+}
+#dtext{
+    position : absolute;
+    font-size : 90px;
+    font-family:monospace;
+    left : 8%;
+    top : 80px;
+    color : white;
+    animation : transitionIn 1s;
+    
+}
+.display{
+
+    left : 50px;
+    transform : translateY(50%);
+    padding-left :10px;
+    color : black
+}
+
+.bmiBox{
+    background-color: aliceblue;
+    border-radius: 20px;
+    height : 35px;
+    width: 200px;
+    position: relative;
+    transform: translateX(-10%);
+}
+#unit{
+    display : inline;
+}
+
+.details input{
+    border : none;
+    border-radius: 20px;
+    height : 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 10px;
+    
+}
+
+.information{
+    width : 95%;
+    margin : auto;
+    height : 2000px;
+    background-color:rgb(25,40,55);
+    margin-top: 700px;
+    border-radius: 20px;
+    z-index: -1;
+    margin-bottom: 50px;
+}
+.maleFemale #male{
+    border : none;
+    height : 40px;
+    width : 15%;
+    border-radius : 20px;
+    position: absolute;
+    top : 40px;
+    left : 3%;
+    font-family: cursive;
+    font-size: 20px;
+    background-color: lightblue;
+    opacity: 1;
+}
+.maleFemale #female{
+    border : none;
+    height : 40px;
+    width : 15%;
+    border-radius : 20px;
+    position: absolute;
+    top : 40px;
+    left : 20%;
+    font-family: cursive;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.information p{
+    color : white;
+    position : relative;
+    margin-left : 45%;
+    margin-right : 5%;
+    font-size: 25px;
+    top :170px;
+    font-family:monospace;
+    font-style : italic;
+    z-index: 0;
+    opacity : 0;
+    scale : 0.8;
+    transition : 1s;
+
+}
+
+.information img{
+    position:absolute;
+    height : 300px;
+    width : 300px;
+    top : 800px;
+    margin-left : 10%;
+    display : inline;
+    opacity : 0;
+    transition : 3s;
+}
+
+#scroll{
+    font-size : 40px;
+    position: absolute;
+    top : 685px;
+    opacity: 1;
+    left :-11%;
+}
+
+.design img{
+    position: absolute;
+    height : 550px;
+    width : 550px;
+    left : 17%;
+    top : 10%;
+    opacity : 0;
+    transition : 1s;
+
+}
+
+
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform : scale(0.95,0.95);
+
+    }
+    to{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+@keyframes transitionI{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1; 
+    }
+}
+
+
+
+
+
+
